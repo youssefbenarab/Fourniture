@@ -14,15 +14,15 @@ class CreatePostsTable extends Migration
     public function up()
     {
         Schema::create('posts', function (Blueprint $table) {
+            $table->id('postid');
             $table->bigInteger('fbid');
+            $table->bigInteger('publicid');
             $table->string('name');
             $table->integer('nbbooks');
             $table->integer('year');
             $table->integer('gouver');
             $table->string('profileurl');
             $table->dateTime('created_at', $precision = 0);
-
-
         });
     }
 
