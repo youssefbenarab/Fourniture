@@ -88,6 +88,7 @@ crossorigin="anonymous"></script>
     <ul class="responsive-table">
       <li class="table-header">
           <div class="col col-1">التواصل</div>
+          <div class="col col-1">طلب</div>
         <div class="col col-2 nophone ">الولاية</div>
         <div class="col col-2 nophone ">السنة</div>
         <div class="col col-1">  الكتب</div>
@@ -111,7 +112,18 @@ crossorigin="anonymous"></script>
          @endphp
         
       <li class="table-row">
+<<<<<<< Updated upstream
         <div class="col col-1" data-label="Payment Status"><a href="https://www.messenger.com/t/{{$item->publicid}}"><i class="fab fa-facebook-messenger" style="font-size: 25px;"></i></a></div>
+=======
+        <div class="col col-1" data-label="Payment Status"><a href="{{$item->profileurl}}"><i class="fab fa-facebook-messenger" style="font-size: 25px;"></i></a></div>
+        <div class="col col-1" data-label="Payment Status">
+          <a href="/request/{{$item->postid}}">
+            <div class="add-request">
+              <i class="fas fa-plus"></i>
+            </div>
+          </a>
+        </div>
+>>>>>>> Stashed changes
         <div class="col col-2 nophone" data-label="Job Id">{{$gouvername}}</div>
         <div class="col col-2 nophone" data-label="Job Id ">{{$classname}}</div>
         <div class="col col-1" data-label="Customer Name">{{$item->nbbooks}} </div>

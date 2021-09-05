@@ -95,6 +95,11 @@ nav{
       align-items: center;
       height: 70px;
     }
+    .col {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
     .col-1 {
       flex-basis: 10%;
     }
@@ -103,6 +108,7 @@ nav{
     }
     .col-3 {
       flex-basis: 25%;
+      width: 15%!important;
     }
     .col-4 {
       flex-basis: 25%;
@@ -117,6 +123,25 @@ nav{
 
    .pagination{
 justify-content: center;
+   }
+   .add-request {
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     background-color: #3697f1;
+     transition-duration: 0.5s;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   a {
+     text-decoration: none!important;
+   }
+   .add-request:hover {
+     background-color: #0275d8;
+   }
+   .add-request .fa-plus {
+     color: #fff;
    }
 
 
