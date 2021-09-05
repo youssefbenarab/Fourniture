@@ -111,7 +111,7 @@ crossorigin="anonymous"></script>
          @endphp
         
       <li class="table-row">
-        <div class="col col-1" data-label="Payment Status"><a href="{{$item->profileurl}}"><i class="fab fa-facebook-messenger" style="font-size: 25px;"></i></a></div>
+        <div class="col col-1" data-label="Payment Status"><a href="https://www.messenger.com/t/{{$item->publicid}}"><i class="fab fa-facebook-messenger" style="font-size: 25px;"></i></a></div>
         <div class="col col-2 nophone" data-label="Job Id">{{$gouvername}}</div>
         <div class="col col-2 nophone" data-label="Job Id ">{{$classname}}</div>
         <div class="col col-1" data-label="Customer Name">{{$item->nbbooks}} </div>

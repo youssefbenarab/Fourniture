@@ -84,14 +84,18 @@
                     <input type="number" min="1" required name="nbbooks" max="15" value="1"   class="form-control" id="floatingInput" >
                     <label for="floatingInput">عدد الكتب </label>
                 </div>
+                <div class="form-floating mb-3">
+                    <input type="url" class="form-control" onchange="changeid()"   name="ProfileUrl" id="profile" placeholder="example: www.facebook.com/profile">
+                    <label for="floatingInput">رابط الفايسبوك </label>
+                  </div>
                 <div class="form-check mb-3">
                     <input class="form-check-input" required type="checkbox" value="" id="flexCheckDefault">
                     <label class="form-check-label"  for="flexCheckDefault" style="color: black; ">
                         أوافق أن يتمّ التواصل معي و أنّ المعلومات التي شاركتها صحيحة </label>
                 </div>
                 <input type="text" required style="display: none;" name="Name" id="name">
-                <input type="text" required style="display: none;" name="ProfileUrl" id="profile">
                 <input type="number" required style="display: none;" name="id" id="id">
+                <input type="number" required style="display: none;"   name="publicid" id="publicid">
 
                 <div class="fb-login-button" id="fbbutton">
                     <div class="fb-login-button  " data-max-rows="2" data-size="large" data-button-type="continue_with"

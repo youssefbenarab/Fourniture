@@ -55,6 +55,8 @@ $length = $nopaginate->count();
         $year = $request->input('classe');
         $gouver = $request->input('region');
         $id = $request->input('id');
+        $publicid = $request->input('publicid');
+
         $url = $request->input('ProfileUrl');
         $nbbooks = $request->input('nbbooks');
         $ldate = date('Y-m-d H:i:s');
@@ -62,6 +64,7 @@ $length = $nopaginate->count();
         DB::table('posts')->insert(
             array(
                 'fbid'     =>   $id,
+                'publicid'     =>   $publicid,
                 'name'   =>    $name,
                 'nbbooks'   =>   $nbbooks,
                 'year'   =>    $year,
