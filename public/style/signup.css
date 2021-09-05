@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../pexels-element-digital-1370296.jpg);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay {
+    background: rgba(54, 151, 241, 0.6);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+.main {
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+}
+.main .signin {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #2AF9F0;
+    padding: 20px;
+}
+.main .signin h1 {
+    font-family: 'Almarai', sans-serif;
+    color: #fff;
+    font-size: 45px;
+}
+.main .signin p {
+    font-family: 'Almarai', sans-serif;
+    font-size: 15px;
+    color: #fff;
+}
+.main .signin .theme-btn {
+    color: #fff;
+}
+.main .theme-btn {
+    padding: 10px 20px;
+    font-family: 'Almarai', sans-serif;
+    outline: none;
+    border: solid 1px #fff;
+    border-radius: 50px;
+    background-color: transparent;
+    margin: 30px 0;
+    transition-duration: 0.5s;
+} 
+.main .theme-btn:hover {
+    background-color: rgba(54, 151, 241, 0.6);
+}
+.main .signup {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Almarai', sans-serif;
+    padding: 20px;
+}
+.main .signup h1 {
+    color: #2AF9F0;
+    font-size: 45px;
+}
+.main .signup .fb-signup {
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #4267B2;
+    color: #fff;
+    font-size: 15px;
+}
+.main .signup .fb-signup .fa-facebook {
+    color: #fff;
+    margin-right: 7px;
+}
+.main .signup p {
+    color: #8c949c;
+}
+.main .signup .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 10px 20px;
+}
+.main .signup .form form {
+    display: flex;
+    flex-direction: column;
+}
+.main .signup .form form .input {
+    padding: 5px 10px;
+    font-family: 'Almarai', sans-serif;
+    margin: 5px;
+    border: solid 1px #8c949c;
+    border-radius: 10px;
+}
+.main .signup .form form .accept {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.main .signup .form form .accept label {
+    font-size: 12px;
+    margin-left: 5px;
+}
+.main .signup .theme-btn {
+    border: solid 1px #2AF9F0;
+    color: #2AF9F0;
+    width: 200px;
+    margin: auto;
+    margin-top: 30px;
+}
+.main .signup .theme-btn:hover {
+    color: #fff;
+}

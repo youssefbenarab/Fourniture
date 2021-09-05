@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب</title>
+    <link rel="icon" href="../../public/imgs/d.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../public/style/all.css">
+    <link rel="stylesheet" href="../../public/style/signup.css">
+
+    <!-- LIB -->
+    <link rel="stylesheet" href="../../public/style/font-awesome.css">
+
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="main">
+        <div class="signin">
+            <h1>مرحبا بعودتك</h1>
+            <p>إذا كان لديك حساب، يمكنك تسجيل الدخول هنا.</p>
+            <a href="">
+                <button class="theme-btn">
+                    تسجيل الدخول
+                </button>
+            </a>
+        </div>
+        <div class="signup">
+            <h1>أنشئ حساب الآن</h1>
+            <div class="fb-signup">
+                <i class="fab fa-facebook"></i>
+                Continue using Facebook 
+            </div>
+            <p>أو أدخل بياناتك الشخصية هنا</p>
+            <div class="form">
+                <form id="signup" action="">
+                    <input id="FirstName" name="FirstName" type="text" placeholder="الإسم" required class="input">
+                    <input id="LastName" name="LastName" type="text" placeholder="اللّقب" required class="input">
+                    <input id="Email" name="Email" type="text" placeholder="البريد الالكتروني" required class="input">
+                    <input id="Password" name="Password" type="password" placeholder="" required class="input">
+
+                    <input id="PhoneNumber" name="PhoneNumber" type="text" placeholder="رقم الهاتف (216+)" required class="input">
+                    <input id="Facebook" name="Facebook" type="text" placeholder="الرّابط لحساب Facebook (إختياري)" class="input">
+                    <div class="accept">
+                        <input type="checkbox" name="accept" id="accept" required>
+                        <label for="accept">لقد قرأت <a href="">سياسة الخصوصية</a> لهذا الموقع وأوافق على جميع شروط الاستخدام</label>
+                    </div>  
+                    <button type="submit" class="theme-btn">إنشاء حساب</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

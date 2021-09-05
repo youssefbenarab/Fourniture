@@ -1,0 +1,276 @@
+/* Styles for dialog window */
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@700&display=swap');
+#small-dialog {
+	height: 520px;
+	overflow: hidden;
+	background: #fff;
+	border-radius: 20px;
+    padding: 20px 10px;
+    text-align: left;
+    max-width: 500px;
+    margin: 40px auto;
+    position: relative;
+    color: #000;
+    font-family: "Almarai", sans-serif;
+}
+#small-dialog .request-container {
+	height: 100%;
+	overflow-y: scroll;
+}
+#small-dialog .request-container::-webkit-scrollbar {
+	width: 7px;
+	background-color: #fff;
+}
+#small-dialog .request-container::-webkit-scrollbar-thumb {
+	width: 7px;
+	background-color: rgb(199, 199, 199);
+	border-radius: 10px;
+}
+#small-dialog h1 {
+	text-align: center;
+}
+#small-dialog ul {
+	
+	list-style: none;
+	color: #8C8C8C;
+	
+}
+#small-dialog ul li {
+	
+	margin: 10px;
+}
+#small-dialog .request {
+	display: flex;
+	padding: 2.5%;
+	align-items: center;
+	justify-content: space-between;
+	height: 70px;
+	width: 95%;
+	border-radius: 20px;
+	background-color: rgb(228, 228, 228);
+}
+#small-dialog .request .data {
+	display: flex;
+	align-items: center;
+}
+#small-dialog .request .data .image {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+#small-dialog .request .data .image img {
+	width: 100%;
+}
+#small-dialog .request .data .details {
+	margin-right: 20px;
+	display: flex;
+}
+#small-dialog .request .data .details .primary {
+	margin-left: 20px;
+}
+#small-dialog .request .data .details .date {
+	text-align: right;
+	margin-right: 20px;
+}
+#small-dialog .request .data .details .value {
+	font-size: 15px;
+	font-weight: 100;
+} 
+#small-dialog .request .data .details .name {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	text-align: right;
+}
+#small-dialog .request .data .details .location {
+	color: #8c949c;
+	font-size: 12px;
+	text-align: right;
+}
+#small-dialog .request .btns {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 10px;
+}
+#small-dialog .request .btns .fa-facebook-messenger {
+	color: #3697f1;
+	transition-duration: 0.5s;
+}
+#small-dialog .request .btns .fa-facebook-messenger:hover {
+    color: #0275d8;   
+}
+
+
+
+
+#delete-confirm {
+	height: 100px;
+	overflow: hidden;
+	background: #fff;
+	border-radius: 20px;
+    padding: 20px 40px;
+    text-align: right;
+    max-width: 400px;
+    margin: 40px auto;
+    position: relative;
+    color: #000;
+    font-family: "Almarai", sans-serif;
+}
+#delete-confirm h1 {
+	font-size: 20px;
+}
+#delete-confirm .btns {
+	display: flex;
+	justify-content: flex-end;
+}
+#delete-confirm .btns button {
+	border: none;
+	margin: 0 5px;
+	cursor: pointer;
+	margin-top: 20px;
+	font-family: 'Almarai', sans-serif;
+	outline: none;
+	width: 70px;
+	padding: 10px;
+	color: #fff;
+	border-radius: 10px;
+	transition-duration: 0.5s;
+}
+#delete-confirm .btns .decline button {
+	background-color: #F23F35;
+} 
+#delete-confirm .btns .decline button:hover {
+	background-color: #BD312A;
+}
+#delete-confirm .btns .confirm button {
+	background-color: #3697f1;
+} 
+#delete-confirm .btns .confirm button:hover {
+	background-color: #0275d8;
+}
+
+
+
+/**
+ * Fade-zoom animation for first dialog
+ */
+
+/* start state */
+.my-mfp-zoom-in .zoom-anim-dialog {
+	opacity: 0;
+
+	-webkit-transition: all 0.2s ease-in-out; 
+	-moz-transition: all 0.2s ease-in-out; 
+	-o-transition: all 0.2s ease-in-out; 
+	transition: all 0.2s ease-in-out; 
+
+
+
+	-webkit-transform: scale(0.8); 
+	-moz-transform: scale(0.8); 
+	-ms-transform: scale(0.8); 
+	-o-transform: scale(0.8); 
+	transform: scale(0.8); 
+}
+
+/* animate in */
+.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
+	opacity: 1;
+
+	-webkit-transform: scale(1); 
+	-moz-transform: scale(1); 
+	-ms-transform: scale(1); 
+	-o-transform: scale(1); 
+	transform: scale(1); 
+}
+
+/* animate out */
+.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
+	-webkit-transform: scale(0.8); 
+	-moz-transform: scale(0.8); 
+	-ms-transform: scale(0.8); 
+	-o-transform: scale(0.8); 
+	transform: scale(0.8); 
+
+	opacity: 0;
+}
+
+/* Dark overlay, start state */
+.my-mfp-zoom-in.mfp-bg {
+	opacity: 0;
+	-webkit-transition: opacity 0.3s ease-out; 
+	-moz-transition: opacity 0.3s ease-out; 
+	-o-transition: opacity 0.3s ease-out; 
+	transition: opacity 0.3s ease-out;
+}
+/* animate in */
+.my-mfp-zoom-in.mfp-ready.mfp-bg {
+	opacity: 0.8;
+}
+/* animate out */
+.my-mfp-zoom-in.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+
+
+
+/**
+ * Fade-move animation for second dialog
+ */
+
+/* at start */
+.my-mfp-slide-bottom .zoom-anim-dialog {
+	opacity: 0;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+
+	-webkit-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	-moz-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	-ms-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	-o-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+
+}
+
+/* animate in */
+.my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
+	opacity: 1;
+	-webkit-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	-moz-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	-ms-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	-o-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+}
+
+/* animate out */
+.my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog {
+	opacity: 0;
+
+	-webkit-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	-moz-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	-ms-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	-o-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+}
+
+/* Dark overlay, start state */
+.my-mfp-slide-bottom.mfp-bg {
+	opacity: 0;
+
+	-webkit-transition: opacity 0.3s ease-out; 
+	-moz-transition: opacity 0.3s ease-out; 
+	-o-transition: opacity 0.3s ease-out; 
+	transition: opacity 0.3s ease-out;
+}
+/* animate in */
+.my-mfp-slide-bottom.mfp-ready.mfp-bg {
+	opacity: 0.8;
+}
+/* animate out */
+.my-mfp-slide-bottom.mfp-removing.mfp-bg {
+	opacity: 0;
+}

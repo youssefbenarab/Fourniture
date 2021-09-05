@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تبرعاتي</title>
+    <link rel="icon" href="../../public/imgs/d.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../public/style/all.css">
+    <link rel="stylesheet" href="../../public/style/mydonations.css">
+    <!-- <link rel="stylesheet" href="../../public/style/search.css"> -->
+    
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <!-- LIB -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+        <!-- MAGNIFIC POPUP  -->
+        <link rel="stylesheet" href="../../public/lib/Magnific-Popup-master/dist/magnific-popup.css">
+        <link rel="stylesheet" href="../../public/style/MPdialogue.css">
+
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="account">
+                <div class="image">
+                    <img src="../../public/imgs/4.png" alt="">
+                </div>
+                <div class="name">Mahdi Ayadi</div>
+            </div>
+            <div class="info" dir="rtl">
+                <p>معرف الفيسبوك: <br><span>2151635616516</span></p>
+                <p>عدد التبرعات: <br><span>3</span></p>
+                <p>عدد الطلبات: <br><span>15</span></p>
+            </div>
+            <div class="nav">
+                <a href="">
+                    <button class="theme-btn">تبرع الآن</button>
+                </a>
+                <a href="">
+                    <button class="theme-btn">البحث عن التبرعات</button>
+                </a>
+            </div>
+        </aside>
+        <div class="main">
+            <div class="title">
+                <h1>تبرّعاتي</h1>
+                <p>تحقق من كل تبرعاتك وطلباتك هنا</p>
+            </div>
+                <ul class="responsive-table">
+                    <li class="table-header">
+                        <div class="col col-4"></div>
+                        <div class="col col-1">الطلبات</div>
+                        <div class="col col-2 nophone ">التاريخ</div>
+                        <div class="col col-2 nophone ">السنة</div>
+                        <div class="col col-1">  الكتب</div>
+                        <div class="col col-3"> </div>
+                        <div class="col col-1">الولاية</div>
+                    </li>                  
+                    <li class="table-row">
+                        <div class="col col-4">
+                            <form id="delete">
+                                <a class="popup-with-move-anim" href="#delete-confirm">
+                                    <button class="trigger">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </a>
+                                <div id="delete-confirm" class="zoom-anim-dialog mfp-hide">
+                                    <h1>هل أنت متأكد أنك تريد حذف هذا التبرع؟</h1>
+                                    <div class="btns">
+                                        <div class="confirm">
+                                            <button type="submit">تأكيد</button>
+                                        </div>
+                                        <div class="decline">
+                                            <button>الغاء</button>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <div class="col col-1" data-label="Payment Status">
+                            <a class="popup-with-move-anim" href="#small-dialog">
+                                <div class="request-nb">
+                                    5
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div id="small-dialog" class="zoom-anim-dialog mfp-hide" >
+                            <div class="request-container">
+                                <h1>طلبات هذا التبرع</h1>
+                            <div class="list">
+                                <br>
+                                <ul>
+                                    <li>
+                                        <div class="request" dir="rtl">
+                                            <div class="data">
+                                                <div class="image">
+                                                    <a href="">
+                                                        <img src="../../public/imgs/4.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="details" >
+                                                    <div class="primary">
+                                                        <div class="name">
+                                                            Mahdi Ayadi
+                                                        </div>
+                                                        <div class="location" >
+                                                            المكان: <span>صفاقس</span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="date">
+                                                        <p>التاريخ</p>
+                                                        <p class="value">18/08/2021</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="btns">
+                                                <div class="contact">
+                                                    <a href="">
+                                                        <i class="fab fa-facebook-messenger" style="font-size: 25px;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="request" dir="rtl">
+                                            <div class="data">
+                                                <div class="image">
+                                                    <a href="">
+                                                        <img src="../../public/imgs/4.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="details" >
+                                                    <div class="primary">
+                                                        <div class="name">
+                                                            Mahdi Ayadi
+                                                        </div>
+                                                        <div class="location" >
+                                                            المكان: <span>صفاقس</span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="date">
+                                                        <p>التاريخ</p>
+                                                        <p class="value">18/08/2021</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="btns">
+                                                <div class="contact">
+                                                    <a href="">
+                                                        <i class="fab fa-facebook-messenger" style="font-size: 25px;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li><li>
+                                        <div class="request" dir="rtl">
+                                            <div class="data">
+                                                <div class="image">
+                                                    <a href="">
+                                                        <img src="../../public/imgs/4.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="details" >
+                                                    <div class="primary">
+                                                        <div class="name">
+                                                            Mahdi Ayadi
+                                                        </div>
+                                                        <div class="location" >
+                                                            المكان: <span>صفاقس</span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="date">
+                                                        <p>التاريخ</p>
+                                                        <p class="value">18/08/2021</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="btns">
+                                                <div class="contact">
+                                                    <a href="">
+                                                        <i class="fab fa-facebook-messenger" style="font-size: 25px;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li><li>
+                                        <div class="request" dir="rtl">
+                                            <div class="data">
+                                                <div class="image">
+                                                    <a href="">
+                                                        <img src="../../public/imgs/4.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="details" >
+                                                    <div class="primary">
+                                                        <div class="name">
+                                                            Mahdi Ayadi
+                                                        </div>
+                                                        <div class="location" >
+                                                            المكان: <span>صفاقس</span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="date">
+                                                        <p>التاريخ</p>
+                                                        <p class="value">18/08/2021</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="btns">
+                                                <div class="contact">
+                                                    <a href="">
+                                                        <i class="fab fa-facebook-messenger" style="font-size: 25px;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li><li>
+                                        <div class="request" dir="rtl">
+                                            <div class="data">
+                                                <div class="image">
+                                                    <a href="">
+                                                        <img src="../../public/imgs/4.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="details" >
+                                                    <div class="primary">
+                                                        <div class="name">
+                                                            Mahdi Ayadi
+                                                        </div>
+                                                        <div class="location" >
+                                                            المكان: <span>صفاقس</span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="date">
+                                                        <p>التاريخ</p>
+                                                        <p class="value">18/08/2021</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="btns">
+                                                <div class="contact">
+                                                    <a href="">
+                                                        <i class="fab fa-facebook-messenger" style="font-size: 25px;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li><li>
+                                        <div class="request" dir="rtl">
+                                            <div class="data">
+                                                <div class="image">
+                                                    <a href="">
+                                                        <img src="../../public/imgs/4.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="details" >
+                                                    <div class="primary">
+                                                        <div class="name">
+                                                            Mahdi Ayadi
+                                                        </div>
+                                                        <div class="location" >
+                                                            المكان: <span>صفاقس</span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="date">
+                                                        <p>التاريخ</p>
+                                                        <p class="value">18/08/2021</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="btns">
+                                                <div class="contact">
+                                                    <a href="">
+                                                        <i class="fab fa-facebook-messenger" style="font-size: 25px;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li><li>
+                                        <div class="request" dir="rtl">
+                                            <div class="data">
+                                                <div class="image">
+                                                    <a href="">
+                                                        <img src="../../public/imgs/4.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="details" >
+                                                    <div class="primary">
+                                                        <div class="name">
+                                                            Mahdi Ayadi
+                                                        </div>
+                                                        <div class="location" >
+                                                            المكان: <span>صفاقس</span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="date">
+                                                        <p>التاريخ</p>
+                                                        <p class="value">18/08/2021</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="btns">
+                                                <div class="contact">
+                                                    <a href="">
+                                                        <i class="fab fa-facebook-messenger" style="font-size: 25px;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col col-2 nophone" data-label="Job Id">18/08/2021</div>
+                        <div class="col col-2 nophone" data-label="Job Id ">8 أساسي</div>
+                        <div class="col col-1" data-label="Customer Name">13</div>
+                        <div class="col col-3" data-label="Amount"></div>
+                        <div class="col col-1" data-label="Payment Status">صفاقس</div>
+                    </li>
+                    <li class="table-row">
+                        <div class="col col-4">
+                            <form id="delete">
+                                <button class="trigger">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="col col-1" data-label="Payment Status">
+                            <a class="popup-with-move-anim" href="#small-dialog">
+                                <div class="request-nb">
+                                    5
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div id="small-dialog" class="zoom-anim-dialog mfp-hide" >
+                            <div class="request-container">
+                                <h1>طلبات هذا التبرع</h1>
+                            <div class="list">
+                                <br>
+                                <ul>
+                                    <li>
+                                        <div class="request" dir="rtl">
+                                            <div class="data">
+                                                <div class="image">
+                                                    <a href="">
+                                                        <img src="../../public/imgs/4.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="details" >
+                                                    <div class="primary">
+                                                        <div class="name">
+                                                            Mahdi Ayadi
+                                                        </div>
+                                                        <div class="location" >
+                                                            المكان: <span>صفاقس</span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="date">
+                                                        <p>التاريخ</p>
+                                                        <p class="value">18/08/2021</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="btns">
+                                                <div class="contact">
+                                                    <a href="">
+                                                        <i class="fab fa-facebook-messenger" style="font-size: 25px;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="request" dir="rtl">
+                                            <div class="data">
+                                                <div class="image">
+                                                    <a href="">
+                                                        <img src="../../public/imgs/4.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="details" >
+                                                    <div class="primary">
+                                                        <div class="name">
+                                                            Mahdi Ayadi
+                                                        </div>
+                                                        <div class="location" >
+                                                            المكان: <span>صفاقس</span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="date">
+                                                        <p>التاريخ</p>
+                                                        <p class="value">18/08/2021</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="btns">
+                                                <div class="contact">
+                                                    <a href="">
+                                                        <i class="fab fa-facebook-messenger" style="font-size: 25px;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li><li>
+                                        <div class="request" dir="rtl">
+                                            <div class="data">
+                                                <div class="image">
+                                                    <a href="">
+                                                        <img src="../../public/imgs/4.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="details" >
+                                                    <div class="primary">
+                                                        <div class="name">
+                                                            Mahdi Ayadi
+                                                        </div>
+                                                        <div class="location" >
+                                                            المكان: <span>صفاقس</span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="date">
+                                                        <p>التاريخ</p>
+                                                        <p class="value">18/08/2021</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="btns">
+                                                <div class="contact">
+                                                    <a href="">
+                                                        <i class="fab fa-facebook-messenger" style="font-size: 25px;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li><li>
+                                        <div class="request" dir="rtl">
+                                            <div class="data">
+                                                <div class="image">
+                                                    <a href="">
+                                                        <img src="../../public/imgs/4.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="details" >
+                                                    <div class="primary">
+                                                        <div class="name">
+                                                            Mahdi Ayadi
+                                                        </div>
+                                                        <div class="location" >
+                                                            المكان: <span>صفاقس</span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="date">
+                                                        <p>التاريخ</p>
+                                                        <p class="value">18/08/2021</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="btns">
+                                                <div class="contact">
+                                                    <a href="">
+                                                        <i class="fab fa-facebook-messenger" style="font-size: 25px;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li><li>
+                                        <div class="request" dir="rtl">
+                                            <div class="data">
+                                                <div class="image">
+                                                    <a href="">
+                                                        <img src="../../public/imgs/4.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="details" >
+                                                    <div class="primary">
+                                                        <div class="name">
+                                                            Mahdi Ayadi
+                                                        </div>
+                                                        <div class="location" >
+                                                            المكان: <span>صفاقس</span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="date">
+                                                        <p>التاريخ</p>
+                                                        <p class="value">18/08/2021</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="btns">
+                                                <div class="contact">
+                                                    <a href="">
+                                                        <i class="fab fa-facebook-messenger" style="font-size: 25px;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li><li>
+                                        <div class="request" dir="rtl">
+                                            <div class="data">
+                                                <div class="image">
+                                                    <a href="">
+                                                        <img src="../../public/imgs/4.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="details" >
+                                                    <div class="primary">
+                                                        <div class="name">
+                                                            Mahdi Ayadi
+                                                        </div>
+                                                        <div class="location" >
+                                                            المكان: <span>صفاقس</span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="date">
+                                                        <p>التاريخ</p>
+                                                        <p class="value">18/08/2021</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="btns">
+                                                <div class="contact">
+                                                    <a href="">
+                                                        <i class="fab fa-facebook-messenger" style="font-size: 25px;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li><li>
+                                        <div class="request" dir="rtl">
+                                            <div class="data">
+                                                <div class="image">
+                                                    <a href="">
+                                                        <img src="../../public/imgs/4.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="details" >
+                                                    <div class="primary">
+                                                        <div class="name">
+                                                            Mahdi Ayadi
+                                                        </div>
+                                                        <div class="location" >
+                                                            المكان: <span>صفاقس</span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="date">
+                                                        <p>التاريخ</p>
+                                                        <p class="value">18/08/2021</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="btns">
+                                                <div class="contact">
+                                                    <a href="">
+                                                        <i class="fab fa-facebook-messenger" style="font-size: 25px;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col col-2 nophone" data-label="Job Id">18/08/2021</div>
+                        <div class="col col-2 nophone" data-label="Job Id ">8 أساسي</div>
+                        <div class="col col-1" data-label="Customer Name">13</div>
+                        <div class="col col-3" data-label="Amount"></div>
+                        <div class="col col-1" data-label="Payment Status">صفاقس</div>
+                    </li>
+                    <li class="table-row">
+                        <div class="col col-4">
+                            <form id="delete">
+                                <button class="trigger">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="col col-1" data-label="Payment Status">
+                            <a class="popup-with-move-anim" href="#small-dialog">
+                                <div class="request-nb">
+                                    5
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div id="small-dialog" class="zoom-anim-dialog mfp-hide" >
+                            <div class="request-container">
+                                <h1>طلبات هذا التبرع</h1>
+                            <div class="list">
+                                <br>
+                                <ul>
+                                    <li>
+                                        <div class="request" dir="rtl">
+                                            <div class="data">
+                                                <div class="image">
+                                                    <a href="">
+                                                        <img src="../../public/imgs/4.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="details" >
+                                                    <div class="primary">
+                                                        <div class="name">
+                                                            Mahdi Ayadi
+                                                        </div>
+                                                        <div class="location" >
+                                                            المكان: <span>صفاقس</span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="date">
+                                                        <p>التاريخ</p>
+                                                        <p class="value">18/08/2021</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="btns">
+                                                <div class="contact">
+                                                    <a href="">
+                                                        <i class="fab fa-facebook-messenger" style="font-size: 25px;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="request" dir="rtl">
+                                            <div class="data">
+                                                <div class="image">
+                                                    <a href="">
+                                                        <img src="../../public/imgs/4.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="details" >
+                                                    <div class="primary">
+                                                        <div class="name">
+                                                            Mahdi Ayadi
+                                                        </div>
+                                                        <div class="location" >
+                                                            المكان: <span>صفاقس</span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="date">
+                                                        <p>التاريخ</p>
+                                                        <p class="value">18/08/2021</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="btns">
+                                                <div class="contact">
+                                                    <a href="">
+                                                        <i class="fab fa-facebook-messenger" style="font-size: 25px;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li><li>
+                                        <div class="request" dir="rtl">
+                                            <div class="data">
+                                                <div class="image">
+                                                    <a href="">
+                                                        <img src="../../public/imgs/4.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="details" >
+                                                    <div class="primary">
+                                                        <div class="name">
+                                                            Mahdi Ayadi
+                                                        </div>
+                                                        <div class="location" >
+                                                            المكان: <span>صفاقس</span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="date">
+                                                        <p>التاريخ</p>
+                                                        <p class="value">18/08/2021</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="btns">
+                                                <div class="contact">
+                                                    <a href="">
+                                                        <i class="fab fa-facebook-messenger" style="font-size: 25px;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li><li>
+                                        <div class="request" dir="rtl">
+                                            <div class="data">
+                                                <div class="image">
+                                                    <a href="">
+                                                        <img src="../../public/imgs/4.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="details" >
+                                                    <div class="primary">
+                                                        <div class="name">
+                                                            Mahdi Ayadi
+                                                        </div>
+                                                        <div class="location" >
+                                                            المكان: <span>صفاقس</span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="date">
+                                                        <p>التاريخ</p>
+                                                        <p class="value">18/08/2021</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="btns">
+                                                <div class="contact">
+                                                    <a href="">
+                                                        <i class="fab fa-facebook-messenger" style="font-size: 25px;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li><li>
+                                        <div class="request" dir="rtl">
+                                            <div class="data">
+                                                <div class="image">
+                                                    <a href="">
+                                                        <img src="../../public/imgs/4.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="details" >
+                                                    <div class="primary">
+                                                        <div class="name">
+                                                            Mahdi Ayadi
+                                                        </div>
+                                                        <div class="location" >
+                                                            المكان: <span>صفاقس</span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="date">
+                                                        <p>التاريخ</p>
+                                                        <p class="value">18/08/2021</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="btns">
+                                                <div class="contact">
+                                                    <a href="">
+                                                        <i class="fab fa-facebook-messenger" style="font-size: 25px;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li><li>
+                                        <div class="request" dir="rtl">
+                                            <div class="data">
+                                                <div class="image">
+                                                    <a href="">
+                                                        <img src="../../public/imgs/4.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="details" >
+                                                    <div class="primary">
+                                                        <div class="name">
+                                                            Mahdi Ayadi
+                                                        </div>
+                                                        <div class="location" >
+                                                            المكان: <span>صفاقس</span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="date">
+                                                        <p>التاريخ</p>
+                                                        <p class="value">18/08/2021</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="btns">
+                                                <div class="contact">
+                                                    <a href="">
+                                                        <i class="fab fa-facebook-messenger" style="font-size: 25px;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li><li>
+                                        <div class="request" dir="rtl">
+                                            <div class="data">
+                                                <div class="image">
+                                                    <a href="">
+                                                        <img src="../../public/imgs/4.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="details" >
+                                                    <div class="primary">
+                                                        <div class="name">
+                                                            Mahdi Ayadi
+                                                        </div>
+                                                        <div class="location" >
+                                                            المكان: <span>صفاقس</span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="date">
+                                                        <p>التاريخ</p>
+                                                        <p class="value">18/08/2021</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="btns">
+                                                <div class="contact">
+                                                    <a href="">
+                                                        <i class="fab fa-facebook-messenger" style="font-size: 25px;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col col-2 nophone" data-label="Job Id">18/08/2021</div>
+                        <div class="col col-2 nophone" data-label="Job Id ">8 أساسي</div>
+                        <div class="col col-1" data-label="Customer Name">13</div>
+                        <div class="col col-3" data-label="Amount"></div>
+                        <div class="col col-1" data-label="Payment Status">صفاقس</div>
+                    </li>
+                </ul>
+        </div>
+    </div>
+
+
+
+
+    <!-- SCRIPTS -->
+        <!-- LIBRARIES -->
+            <!-- MAGNIFIC POPUP -->
+                <script src="../../public/lib/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
+                <script src="../../public/script/MPdialogue.js"></script>
+</body>
+</html>

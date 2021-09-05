@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@700&display=swap');
+*{
+    scroll-behavior: smooth;
+
+}
+
+body{
+    font-family: 'Almarai', sans-serif;
+margin: 0% 0%;
+text-align: center;
+}
+.form-floating{
+    text-align: right;
+}
+
+
+    .home{
+width: 100%;
+        height: 100vh;
+  
+    background-image: url("../pexels-element-digital-1370296.jpg");
+    background-size: cover;
+background-attachment: fixed;
+margin-bottom: 2%;   }
+
+.text{
+text-align: right;
+    width: 85%;
+    margin-left: 4%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text p {
+font-size: 16px;
+margin: 0% 0%;
+margin-bottom: 3%!important;
+}
+.text h5{
+font-size: 30px;
+margin: 0% 0%;
+margin-bottom: 3%!important;
+
+color: #0275d8;
+}
+.home h1{
+margin: 0% 0%;  
+margin-top: 4%!important;
+  font-size: 60px;
+}
+
+.overlay{
+    background: rgba(54, 151, 241, 0.6);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+align-items: center;
+}
+
+
+#go{
+height: 40px;
+width: 250px;
+line-height: 35px;
+color: #0275d8;
+text-decoration: none;
+border: solid 3px #0275d8 ;
+border-radius: 50px;
+bottom: 30px;
+transition: 0.3s;
+margin-bottom: 20px;
+}
+
+#go:hover{
+background-color: #0275d8;
+color: white;
+transition: 0.3s;
+}
+
+
+.square{
+align-items: center;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.99);
+    height: 80%;
+    box-shadow: 0 5px 15px 0px rgba(0,0,2px,0.8);
+    border-radius: 80px;
+    padding-top: 0%;
+    margin: 0%!important;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+position: relative;
+}
+
+.item{
+    width: 40%;
+    height: 30vh;
+    display: flex;
+justify-content: center;
+align-items: center;
+border: #0275d8 solid 5px;
+border-radius: 40px;
+color: #0275d8;
+cursor: pointer;
+transition: 0.5s;
+
+}
+
+.item:hover{
+background-color: #0275d8 ;
+color: white
+;
+transition: 0.5s;
+}
+
+.plan{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.element{
+font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+i{
+    margin-right:10px;
+}
+
+
+.section{
+padding-top: 5vh;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.countersection{
+
+    height: 50vh;
+  padding-top: 5vh;
+    
+}
+
+.counter { padding: 20px 0; border-radius: 5px;
+width: 28%;}
+.wrapper{
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.count-title { font-size: 40px; font-weight: normal;  margin-top: 5px; margin-bottom: 0; text-align: center; }
+.count-text { font-size: 20px; font-weight: normal;  margin-top: 5px; margin-bottom: 0; text-align: center; }
+.fa-2x { margin: 0 auto; float: none; display: table; color: #0275d8; } 
+
+
+
+
+
+/* partners */
+
+.partner img{
+width: 100%;
+height: 100px;
+object-fit: contain;
+filter: grayscale(1);
+transition: 0.3s;
+}
+
+.partner img:hover{
+    filter: grayscale(0);
+    transition: 0.3s;
+}
+
+.allpartners{
+height: 40vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.partner{
+    width: 25%;
+}
+
+.partners{
+    display: flex;
+}
+
+@media screen and (max-width: 900px) {
+
+.home{
+    background-attachment: initial!important;
+}
+
+.square{
+
+    width: 95%;
+    border-radius: 45px;
+}
+.square h1{
+    font-size: 30px;
+}
+.text{
+height: 70%;}
+
+.plan{
+    flex-direction: column;
+    height: 90vh;
+}
+.item{
+    width: 100%;
+    margin-bottom: 9%;
+    height: 50%;
+}
+.wrapper{
+    flex-direction: column;
+}
+
+.countersection{
+height: 90vh;
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+}
+
+
+.partners{
+    flex-direction: column;
+}
+
+
+
+.partner{
+
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}}
+
+
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@media screen and (min-width: 1200px) {
+
+
+@keyframes floating {
+    from { transform: translate(0,  0px);
+    	 }
+
+    50%  { transform: translate(0, 10px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+}
