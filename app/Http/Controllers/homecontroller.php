@@ -97,7 +97,20 @@ public function myaccount(Request $request){
     
     }
     
+public function delete(Request $request){
+$postid = $request->input('postid');
+$fbid = $request->input('fbid');
+DB::table('posts')->where('postid',$postid)->where('fbid',$fbid)->delete();
 
+
+$name = $request->input('name');
+
+$table =  DB::table('posts')->orderByDesc('created_at')->where('fbid', $fbid)->paginate(5);
+
+return view('mydonations')->with('name',$name)->with('id',$fbid)->with('table',$table);
+
+
+}
 
 
 }

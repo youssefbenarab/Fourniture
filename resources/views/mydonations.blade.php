@@ -29,13 +29,13 @@
 <body>
     @php
     $govs = ['أريانة','بن عروس','باجة','بنزرت','قابس','قفصة','جندوبة','قبلي','الكاف','القيروان','مدنين','المهدية','المنستير','نابل','صفاقس','سليانة','سوسة','تطاوين','توزر','تونس','زغوان','جربة','مدنين','منوبة','القصرين','سيدي بوزيد'];
-
    $classes = ['سابعة أساسي','ثامنة أساسي','تاسعة أساسي','أولى ثانوي','ثانية علوم','ثانية علوم الإعلاميّة','ثانية اداب','ثانية اقتصاد','ثالثة رياضيات','ثالثة علوم تقنيّة','ثالثة علوم تجريبيّة','ثالثة علوم إعلاميّة','ثالثة اداب','ثالثة اقتصاد','بكالوريا رياضيات','بكالوريا علوم تقنيّة','بكالوريا علوم تجريبيّة','بكالوريا علوم الاعلاميّة','بكالوريا اداب','بكالوريا اقتصاد'];            
-
+  
+  $_SESSION['fbid'] = $id;
 @endphp
+
     <div class="container">
         <aside>
-            <button class="hide" ></button>
             <div class="account">
                 <div class="image">
                 <img src="https://graph.facebook.com/{{$id}}/picture?type=large" alt="">
@@ -71,18 +71,23 @@
                         <div class="col col-3"> </div>
                         <div class="col col-1">الولاية</div>
                     </li>    
+                    <form id="delete" method="POST" action="deleted">
+                    @csrf
+                    <input type="number" name="postid" id="postid" style="display: none;">
+                    <input type="number" name="fbid" value="{{$id}}" style="display: none;">
+                    <input type="text" name="name" value="{{$name}}" style="display: none;">
+
                     @foreach ($table as $item)
                     @php
                     $govindex = $item->gouver;
                     $gouvername = $govs[$govindex];
                     $classindex = $item->year;
                     $classname = $classes[$classindex-1];
-                @endphp
+                    @endphp
                     <li class="table-row">
                         <div class="col col-4">
-                            <form id="delete">
                                 <a class="popup-with-move-anim" href="#delete-confirm">
-                                    <button class="trigger">
+                                    <button class="trigger" onclick="submitting({{$item->postid}})">
                                         <i class="fas fa-trash"></i>
                                     </button>
                                 </a>
@@ -90,15 +95,14 @@
                                     <h1>هل أنت متأكد أنك تريد حذف هذا التبرع؟</h1>
                                     <div class="btns">
                                         <div class="confirm">
-                                            <button type="submit">تأكيد</button>
+                                            <button type="submit" class="submit">تأكيد</button>
                                         </div>
                                         <div class="decline">
                                             <button>الغاء</button>
                                         </div>
-                                        
+                                       
                                     </div>
                                 </div>
-                            </form>
                         </div>
                         
                         <div class="col col-1" data-label="Payment Status">
@@ -353,6 +357,7 @@
                         <div class="col col-1" data-label="Payment Status">{{$gouvername}}</div>
                     </li>
                     @endforeach              
+                </form>
 
                 </ul>
         </div>
@@ -366,5 +371,23 @@
             <!-- MAGNIFIC POPUP -->
                 <script src="lib/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
                 <script src="script/MPdialogue.js"></script>
+<script>
+
+function submitting(id){
+
+$("#postid").val(id);
+console.log(id);
+// $("form").submit();
+}
+
+
+$(".submit").click(function (e) { 
+    e.preventDefault();
+    $("form").submit();
+});
+
+</script>
+
+
 </body>
 </html>

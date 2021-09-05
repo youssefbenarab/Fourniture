@@ -21,3 +21,4 @@ Route::post('/Donate', [homecontroller::class, 'donating']);
 Route::get('/Search', [homecontroller::class, 'search']);
 Route::get('/account', [homecontroller::class, 'account']);
 Route::post('/account', [homecontroller::class, 'myaccount']);
+Route::post('/deleted', [homecontroller::class, 'delete']);
