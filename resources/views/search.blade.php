@@ -17,8 +17,9 @@ crossorigin="anonymous"></script>
 <link rel="stylesheet" href="style/font-awesome.css">
 <link rel="stylesheet" href="style/all.css">
 </head>
-<body>
+<body> 
     <nav>
+    <a href="/" style="position: absolute; left: 2%; top: 3.5%; font-size: 25px; "><i class="fas fa-arrow-left "></i> </a>
     <h1>  قائمة المتبرّعين بالكتب المدرسيّة</h1>
     <hr>
 
@@ -88,7 +89,6 @@ crossorigin="anonymous"></script>
       <li class="table-header">
           <div class="col col-1">التواصل</div>
         <div class="col col-2 nophone ">الولاية</div>
-
         <div class="col col-2 nophone ">السنة</div>
         <div class="col col-1">  الكتب</div>
         <div class="col col-3"> الاسم</div>
@@ -142,9 +142,21 @@ crossorigin="anonymous"></script>
           <span class="sr-only">Previous</span>
         </a>
       </li>
-    @for ($i = 1; $i <= $pages; $i++)
+      @if ($pages>5)
+
+    @for ($i = 1; $i <= 5; $i++)
+    
     <li class="page-item"><input name="page" class="pageradio" type="radio" id="page{{$i}}" value="{{$i}}" onchange="submit()" ><label  class="page-link " for="page{{$i}}" id="label{{$i}}">{{$i}}</label></li>
     @endfor
+    <li class="page-item"><input name="page" class="pageradio" type="radio" id="page6" value="6" onchange="submit()" ><label  class="page-link " for="page6" id="label6">...</label></li>
+   @else
+   @for ($i = 1; $i <= $pages; $i++)
+    
+   <li class="page-item"><input name="page" class="pageradio" type="radio" id="page{{$i}}" value="{{$i}}" onchange="submit()" ><label  class="page-link " for="page{{$i}}" id="label{{$i}}">{{$i}}</label></li>
+   @endfor
+    @endif
+   
+   
       <li class="page-item">
         <a class="page-link" aria-label="Next" id="next">
           <span aria-hidden="true">&raquo;</span>

@@ -20,7 +20,7 @@ class CreatePostsTable extends Migration
             $table->integer('year');
             $table->integer('gouver');
             $table->string('profileurl');
-
+            $table->dateTime('created_at', $precision = 0);
 
 
         });

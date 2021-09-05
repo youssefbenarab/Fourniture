@@ -10,3 +10,11 @@ $("#search").click(function (e) {
 
 });
 
+
+
+$("#mydonations").click(function (e) { 
+    e.preventDefault();
+    window.location.href="account";
+
+});
+

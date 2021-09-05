@@ -96,7 +96,7 @@ position: relative;
 }
 
 .item{
-    width: 40%;
+    width: 30%;
     height: 30vh;
     display: flex;
 justify-content: center;
@@ -120,7 +120,7 @@ transition: 0.5s;
     margin-top: 2%;
     display: flex;
     justify-content: space-around;
-    width: 70%;
+    width: 90%;
 }
 
 .element{
@@ -215,15 +215,17 @@ height: 70%;}
 
 .plan{
     flex-direction: column;
-    height: 90vh;
 }
 .item{
     width: 100%;
     margin-bottom: 9%;
-    height: 50%;
+    height: 55vh;
 }
 .wrapper{
     flex-direction: column;
+}
+.counter{
+width: auto;
 }
 
 .countersection{

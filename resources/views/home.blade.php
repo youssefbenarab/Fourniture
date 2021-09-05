@@ -4,7 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>حملة التبرّع بالكتب</title>
+    <!-- Primary Meta Tags -->
+<title>المنصّة الرقميّة للتبرّع بالأدوات</title>
+<meta name="title" content="المنصّة الرقميّة للتبرّع بالأدوات">
+<meta name="description" content="عندك أدوات متستحقمش؟ فاش تستنى؟ تبرّع بأدواتك باش نقصوا من التلوث و المصاريف الزايدة">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://metatags.io/">
+<meta property="og:title" content="المنصّة الرقميّة للتبرّع بالأدوات">
+<meta property="og:description" content="عندك أدوات متستحقمش؟ فاش تستنى؟ تبرّع بأدواتك باش نقصوا من التلوث و المصاريف الزايدة">
+<meta property="og:image" content="https://www.fourniture.dot-devs.tn/imgs/mini.jpg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://metatags.io/">
+<meta property="twitter:title" content="المنصّة الرقميّة للتبرّع بالأدوات">
+<meta property="twitter:description" content="عندك أدوات متستحقمش؟ فاش تستنى؟ تبرّع بأدواتك باش نقصوا من التلوث و المصاريف الزايدة">
+<meta property="twitter:image" content="https://www.fourniture.dot-devs.tn/imgs/mini.jpg">
 <link rel="icon" href="imgs/d.png">
     <link rel="stylesheet" href="style/font-awesome.css">
     <link rel="stylesheet" href="style/all.css">
@@ -33,6 +50,18 @@
 
     <h1>شنو تحب تعمل  </h1>
     <div class="plan" >
+
+
+
+        <div class="item" id="mydonations">
+            <div class="element">
+                <i class="fas fa-user"></i>
+
+                <h2>تبرّعاتي</h2>
+              
+            </div>
+        </div>
+
         <div class="item" id="donate">
             <div class="element">
                 <i class="fas fa-hand-holding-medical"></i>
@@ -51,6 +80,8 @@
               
             </div>
         </div>
+
+
 
 
 

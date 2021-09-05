@@ -90,10 +90,10 @@
                         أوافق أن يتمّ التواصل معي و أنّ المعلومات التي شاركتها صحيحة </label>
                 </div>
                 <input type="text" required style="display: none;" name="Name" id="name">
-                <input type="url" required style="display: none;" name="ProfileUrl" id="profile">
+                <input type="text" required style="display: none;" name="ProfileUrl" id="profile">
                 <input type="number" required style="display: none;" name="id" id="id">
 
-                <div class="fb-login-button" id="fbbutton" style="display: none;">
+                <div class="fb-login-button" id="fbbutton">
                     <div class="fb-login-button  " data-max-rows="2" data-size="large" data-button-type="continue_with"
                         data-use-continue-as="true" onlogin="checkLoginState();" style="width: 100%;"></div>
                 </div>
