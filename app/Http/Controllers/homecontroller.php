@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Models\Post;
 
 class homecontroller extends Controller
 {
@@ -112,5 +113,11 @@ return view('mydonations')->with('name',$name)->with('id',$fbid)->with('table',$
 
 }
 
+public function requestPage($fbid) {
+    $posts = Post::find($fbid);
+    return view('request')->with('posts',$posts);
+}
+public function SendRequest(Request $request, $id) {
+}
 
 }
