@@ -36,6 +36,7 @@
 
     <div class="container">
         <aside>
+            <a href="/" style="color: white; position: absolute; left: 2%; top: 3.5%; font-size: 25px; "><i class="fas fa-arrow-left "></i> </a>
             <div class="account">
                 <div class="image">
                 <img src="https://graph.facebook.com/{{$id}}/picture?type=large" alt="">
@@ -49,10 +50,10 @@
             </div>
             <div class="nav">
                 <a href="">
-                    <button class="theme-btn">تبرع الآن</button>
+                    <button class="theme-btn" id="donate">تبرع الآن</button>
                 </a>
                 <a href="">
-                    <button class="theme-btn">البحث عن التبرعات</button>
+                    <button class="theme-btn" id="search">البحث عن التبرعات</button>
                 </a>
             </div>
         </aside>
@@ -76,7 +77,9 @@
                     <input type="number" name="postid" id="postid" style="display: none;">
                     <input type="number" name="fbid" value="{{$id}}" style="display: none;">
                     <input type="text" name="name" value="{{$name}}" style="display: none;">
-
+@if ($table->count()==0)
+  <br><br>  <h3 style="width: 100%; text-align: center; ">لا توجد أيّ تبرّعات  </h3>
+@endif
                     @foreach ($table as $item)
                     @php
                     $govindex = $item->gouver;
@@ -385,6 +388,21 @@ $(".submit").click(function (e) {
     e.preventDefault();
     $("form").submit();
 });
+
+
+$("#donate").click(function (e) { 
+    e.preventDefault();
+    window.location.href="Donate";
+
+});
+
+$("#search").click(function (e) { 
+    e.preventDefault();
+    window.location.href="Search";
+
+});
+
+
 
 </script>
 

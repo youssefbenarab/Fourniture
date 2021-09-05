@@ -18,14 +18,18 @@
     <script async defer crossorigin="anonymous"
         src="https://connect.facebook.net/en_EN/sdk.js#xfbml=1&version=v11.0&appId=317868489733953&autoLogAppEvents=1"
         nonce="iPTofnze"></script>
-
+        <link rel="stylesheet" href="style/all.css">
 </head>
 
 <body>
+
     <div class="home">
 
         <div class="overlay">
-<div class="form">     <h1 class="mb-3"> إضافة متبرّع جديد</h1>
+
+<div class="form">      
+    <a href="/" style="color: white; position: absolute; left: 2%; top: 3.5%; font-size: 25px; "><i class="fas fa-arrow-left "></i> </a>
+   <h1 class="mb-3"> إضافة متبرّع جديد</h1>
  <form action="Donate" method="POST">
 @csrf
                 <div class="form-floating mb-3">
